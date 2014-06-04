@@ -14,6 +14,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.nio.file.Files;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -142,7 +143,8 @@ public class RMGenerateFeatures {
 			oldFile.delete();
 			
 			File tempFile = new File(infile.replaceAll(".txt","_temp.txt"));
-			tempFile.renameTo(new File(infile));
+			
+			Files.move(tempFile.toPath(), new File(infile).toPath());
 		} catch ( Exception e ) {
 			e.printStackTrace();
 		}
