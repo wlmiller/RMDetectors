@@ -1176,7 +1176,7 @@ public class RMGenerateFeatures {
 			System.out.println(" Done.");
 			
 			System.out.print("Aggregating clips...");
-			AggregateClips.main(mainFolder);
+			AggregateClips.main(new String[]{mainFolder});
 			System.out.println(" Done.");
 		}
 	}

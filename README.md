@@ -12,7 +12,7 @@ The code requires a single command-line argument which is the folder containing 
 - `PofJ.txt`, `PofG.txt`, and `PofS.txt`: The parameters, determined by linear regression, for the calculation of contextual BKT parameters.
 - [`generatecontextual.py`](src/generatecontextual.py) and [`contextualfeatures.py`](src/contextualfeatures.py): Copy these scripts to the log file directory.
 
-The result, contained in a folder called `analytics`, will be the data, aggregated into clips, for all observations as well as divided by label.
+The result, contained in a folder called `clips`, will be the data, aggregated into clips, for all observations as well as divided by label.
 
 __Note__: _Intermediate files are retained, and can be quite large.  Upon completion of the process, the directory is likely to contain around 10 GB of files._
 

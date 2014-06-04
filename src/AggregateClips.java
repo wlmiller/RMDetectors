@@ -753,10 +753,10 @@ public class AggregateClips {
 		}
 	}
 	
-	public static void main(String arg) {
-		String mainFolder = arg;
+	public static void main(String[] arg) {
+		String mainFolder = arg[0];
 		infile = mainFolder + "/Data_All_Synced_contextual_features.txt";
-		outfiledir = mainFolder + "/analytics/";
+		outfiledir = mainFolder + "/clips/";
 		if (!(new File(outfiledir)).exists()) {
 			(new File(outfiledir)).mkdir();
 		}
