@@ -1004,10 +1004,10 @@ public class RMGenerateFeatures {
 		 */
 		try {
 			String command = "cmd.exe /c";
-			command += " cd src";
+			command += " cd " + mainFolder;
 			command += " && start python generatecontextual.py";
 			String command2 = "cmd.exe /c";
-			command2 += " cd src";
+			command2 += " cd " + mainFolder;
 			command2 += " && start python contextualfeatures.py";
 			
 			Process p1 = Runtime.getRuntime().exec(command);
